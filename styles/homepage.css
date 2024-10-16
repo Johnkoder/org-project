@@ -26,7 +26,7 @@ html {
 
 body {
   background-color: var(--cream-white);
-  height: 3000px;
+  height: 4000px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -381,4 +381,25 @@ header {
 
 .faq-answer {
   font-size: 1.2em;
+}
+
+/* Contact styles*/
+.contact-section {
+  background-image: url('../assets/images/coffee-bgv2.jpg');
+  padding: 0 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 600px;
+  color: var(--espresso-black);
+}
+
+.contact-heading {
+  font-size: 2.5em;
+}
+
+.contact-container {
+
 }
