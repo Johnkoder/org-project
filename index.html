@@ -158,20 +158,86 @@
     </section>
 
     <section class="contact-section">
-      <h1 class="contact-heading">Contact Us</h1>
+      <div class="contact-circle-border1">
+        <div class="contact-circle"></div>
+      </div>
+
+      <div class="contact-circle-border2">
+        <div class="contact-circle"></div>
+      </div>
+
+      <div class="contact-circle-border3">
+        <div class="contact-circle"></div>
+      </div>
 
       <div class="contact-container">
         <div class="socials-container">
           <div class="social">
-            <img class="social-icon" src="">
+            <img class="social-icon" src="./assets/icons/location.svg">
+
             <div class="social-info">
               <h2 class="social-heading">Address</h2>
-              <div class="social-const">123 Twin Towers, Fortnite, Metro Manila</div>
+              <div class="social-const">123 St. Twin Towers, Fortnite, Metro Manila</div>
+            </div>
+          </div>
+
+          <div class="social">
+            <img class="social-icon" src="./assets/icons/email.svg">
+
+            <div class="social-info">
+              <h2 class="social-heading">Email</h2>
+              <div class="social-const">cawfee@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="social">
+            <img class="social-icon" src="./assets/icons/facebook.svg">
+
+            <div class="social-info">
+              <h2 class="social-heading">Facebook</h2>
+              <div class="social-const">The Cawfee Shop</div>
             </div>
           </div>
         </div>
 
-        <div class="form-container"></div>
+        <div>
+          <h1 class="contact-heading">Contact Us</h1>
+        <div class="form-container">
+          <form action="/submit-form" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+              <button type="submit">Send Message</button>
+              <!--use js so that it pops a modal saying email sent-->
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <div class="footer-top">
+        <img class="footer-logo" src="assets/icons/logo.svg">
+        <div class="footer-links">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Menu</a>
+          <a href="">Gallery</a>
+          <a href="">Reviews</a>
+        </div>
+        <div class="footer-socials">
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+
       </div>
     </section>
   </main>
