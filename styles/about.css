@@ -26,7 +26,7 @@ html {
 
 body {
   background-color: var(--cream-white);
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -120,8 +120,177 @@ header {
   right: 50px;
 }
 
+/* Hero section styles*/
+.hero-section {
+  background: url(../assets/images/abt-imgs/abt-coffee-bg.jpg);
+  width: 100%;
+  height: 520px;
+  color: var(--cream-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 130px;
+}
 
+.hero-heading {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
 
+.hero-subtitle {
+  font-weight: 500;
+}
+
+.hero-img-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+  top: 150px;
+  border-radius: 20px;
+  border: 8px solid var(--cream-white);
+}
+
+.hero-img:nth-child(1), .hero-img:nth-child(3) {
+  height: 250px;
+  width: 250px;
+}
+
+/* History section styles*/
+.history-section {
+  padding: 0 5em;
+  margin-bottom: 100px;
+}
+
+.history-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 50px;
+}
+
+.history-heading {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--coffee-brown);
+}
+
+.history-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 80px;
+}
+
+.history-info-heading {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.history-info p {
+  font-size: 1.4em;
+  max-width: 650px;
+}
+
+.history-info-img {
+  height: 460px;
+  width: 460px;
+  object-fit: cover;
+  border: 5px solid var(--charcoal-gray);
+  border-radius: 25px;
+}
+
+/* Mission section styles*/
+.mission-section {
+  padding: 3em 15em;
+  margin-bottom: 90px;
+  background: url(../assets/images/abt-imgs/abt-coffee-bg.jpg);
+}
+
+.mission-heading {
+  font-size: 2.5em;
+  color: var(--cream-white);
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+.mission-section p {
+  color: var(--cream-white);
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* Team section styles*/
+.team-section {
+  padding: 0 5em;
+  margin-bottom: 90px;
+}
+
+.team-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 50px;
+}
+
+.team-heading {
+  font-size: 2.5em;
+}
+
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 7em;
+  row-gap: 4em;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--charcoal-gray)
+}
+
+.member-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.member-name {
+  font-size: 1.8em;
+}
+
+.member-role {
+  color: var(--caramel-beige);
+  margin-bottom: 15px;
+}
+
+.member-desc {
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
 
 /* Footer styles */
