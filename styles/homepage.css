@@ -26,7 +26,7 @@ html {
 
 body {
   background-color: var(--cream-white);
-  height: 4000px;
+  padding-top: 120px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -36,16 +36,19 @@ a, a:hover, a:focus, a:active {
 
 /* Header styles*/
 header {
-  /* background-color: red; */
+  border-bottom: 3px solid var(--coffee-brown);
   width: 100%;
   padding: 20px 0 20px 0;
   margin-bottom: 40px;
-  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
   background-color: var(--caramel-beige);
+  position: fixed; 
+  z-index: 100;
+  top: 0;
+
 }
 
 .logo-section {
@@ -93,7 +96,9 @@ header {
 
 /* Hero section styles*/
 .hero-section {
+  padding-top: 80px;
   padding: 0 5em;
+  padding: 0 5em 0 5em; /* For Fixed style */
   margin-bottom: 140px;
   display: flex;
   align-items: center;
@@ -182,6 +187,33 @@ header {
 
 .hero-btn:hover {
   background-color: var(--mint-green);
+}
+
+/* Floating styles */
+.floating {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px;
+  border: 2px solid var(--charcoal-gray);
+  border-radius: 50%;
+  background-color: var(--soft-pink);
+  z-index: 100;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+
+#floating-img {
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 0.5s ease;
+}
+
+.floating:hover {
+  transform: scale(3);
+  bottom: 50px; 
+  right: 50px;
 }
 
 /** About us styles**/
@@ -541,4 +573,40 @@ button[type="submit"]:active {
 /* Footer styles */
 .footer-section {
   background-color: #4E4E4E;
+  color: var(--cream-white);
+  padding: 6em 5em;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5em;
+  font-size: 1.1em;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.5em;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 1.4em;
+  justify-content: center;
+}
+
+.footer-bottom a {
+  text-decoration: underline;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: var(--cream-white);
+  width: 100%;
+  margin-bottom: 3em;
 }
