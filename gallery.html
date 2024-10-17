@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <div class="logo-section">
-      <img class="logo-img" src="assets/icons/logo.svg">
-      <a class="logo-name">Cawfee!</a>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icons/logo.svg" type="image/x-icon">
+    <title>Menu</title>
+  </head>
 
-    <div class="nav-btns">
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About Us</a>
-      <a href="./menu.html">Menu</a>
-      <a href="./gallery.html">Gallery</a>
-      <a href="./reviews.html">Reviews</a>
-    </div>
-  </header>
-  <h1>THIS IS THE GALLERY PAGE</h1>
-</body>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img class="logo-img" src="assets/icons/logo.svg">
+        <a class="logo-name">Cawfee!</a>
+      </div>
+    
+      <div class="nav-btns">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./reviews.html">Reviews</a>
+      </div>
+    </header>
+
+    <section class="floating">
+      <img id="floating-img" src="./assets/images/coffee-cat.gif">
+    </section>
+
+    <main class="main-section">
+
+      <section class="gallery-section">
+        <h1 class="gallery-heading">Gallery</h1>
+
+        <div id="images-container">
+          
+        </div>
+      </section>
+      
+      <section class="footer-section">
+        <div class="footer-top">
+          <img class="footer-logo" src="assets/icons/logo-cream.svg">
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./reviews.html">Reviews</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><img src="assets/icons/facebook-white.svg" alt="facebook"></a>
+            <a href=""><img src="assets/icons/insta-white.svg" alt="instagram"></a>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Cawfee Co. All rights reserved.</p>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/floating.js"></script>
+    <script>
+      const imagesContainer = document.getElementById("images-container");
+
+      async function fetchData() {
+        try {
+          const res = await fetch("https://api.sampleapis.com/coffee/hot");
+          const data = await res.json();
+
+          let HTML = ``;
+          data.forEach(element => {
+            HTML +=`
+              <img src="${element.image}">
+            `;
+          });
+          imagesContainer.innerHTML = HTML;
+          
+        } catch (error) {
+          console.error("Fetch error:", error);
+        }
+      }
+      fetchData();
+    </script>
+  </body>
 </html>
