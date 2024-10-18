@@ -94,11 +94,16 @@
         try {
           const res = await fetch("https://api.sampleapis.com/coffee/hot");
           const data = await res.json();
-
+          
           let HTML = ``;
           data.forEach(element => {
             HTML +=`
-              <img src="${element.image}">
+              <div class="gallery-img-container">
+                <span class="img-overlay">
+                  <p class="img-title">${element.title}</p>
+                </span>
+                <img class="gallery-img" src="${element.image}">
+              </div>
             `;
           });
           imagesContainer.innerHTML = HTML;
