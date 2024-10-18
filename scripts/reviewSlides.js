@@ -14,6 +14,16 @@ const reviews = [
     img: "./assets/images/reviews-imgs/abt-member-img3.png",
     name: "Maria R.",
     parag: "A hidden gem! The customer service is top-notch, and the coffee is crafted with such care. I always leave with a smile on my face. I love this more than my fortnite battle pass. 100% rizz approved."
+  },
+  {
+    img: "./assets/images/reviews-imgs/abt-member-img5.png",
+    name: "Linus T.",
+    parag: "I’m a huge fan of this coffee shop! The ambiance is perfect whether you're working on your laptop or catching up with friends. Plus, their latte art is always Instagram-worthy!"
+  },
+  {
+    img: "./assets/images/reviews-imgs/abt-member-img4.png",
+    name: "Jamal K.",
+    parag: "This coffee shop has become my second home. The blend of flavors in their brews is unmatched, and the pastries are out of this world. I love that it’s a peaceful spot where I can relax, read a book, or even just people-watch."
   }
 ];
 
@@ -25,9 +35,11 @@ const nextBtn = document.getElementById("next-btn");
 
 let currentIndex = 0;
 
+displayReview(currentIndex);
+
 function displayReview(index) {
   const review = reviews[index];
-
+  
   setTimeout(() => {
     reviewsContainer.innerHTML = `
     <div class="review">
@@ -54,9 +66,6 @@ function displayReview(index) {
   slide.style.opacity = 1;
   }, 400);
 }
-
-displayReview(currentIndex);
-
 
 function prevSlide() {
   const slide = document.querySelector(".review");
