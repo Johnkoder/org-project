@@ -78,6 +78,10 @@ header {
   position: relative;
 }
 
+.nav-btns a:nth-child(4)::before {
+  width: 100%;
+}
+
 .nav-btns a::before {
   content: "";
   position: absolute;
@@ -91,6 +95,10 @@ header {
 
 .nav-btns a:hover::before {
   width: 100%;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 /* Floating styles */
@@ -120,6 +128,82 @@ header {
   right: 50px;
 }
 
+/* Hero section styles*/
+.hero-section {
+  background: url(../assets/images/abt-imgs/abt-coffee-bg.jpg);
+  width: 100%;
+  height: 520px;
+  color: var(--cream-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 130px;
+}
+
+.hero-heading {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+}
+
+.hero-img-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+  top: 150px;
+  border-radius: 20px;
+  border: 8px solid var(--cream-white);
+}
+
+.hero-img:nth-child(1), .hero-img:nth-child(3) {
+  height: 250px;
+  width: 250px;
+}
+
+/* Gallery section styles */
+.gallery-section {
+  padding: 0 5em;
+  margin-bottom: 100px;
+}
+
+.gallery-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 50px;
+}
+
+.gallery-heading {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.dot {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--coffee-brown);
+}
+
+.dot:nth-child(3), .dot:nth-child(5) {
+  width: 15%;
+}
+
+.dot:nth-child(2), .dot:nth-child(6) {
+  width: 50%;
+}
 
 
 /* Footer styles */

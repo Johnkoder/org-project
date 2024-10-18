@@ -79,6 +79,10 @@ header {
   position: relative;
 }
 
+.nav-btns a:nth-child(1)::before {
+  width: 100%;
+}
+
 .nav-btns a::before {
   content: "";
   position: absolute;

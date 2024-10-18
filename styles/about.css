@@ -74,6 +74,10 @@ header {
   gap: 2rem;
 }
 
+.nav-btns a:nth-child(2)::before {
+  width: 100%;
+}
+
 .nav-btns a {
   position: relative;
 }
