@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/icons/logo.svg" type="image/x-icon">
-    <title>Menu</title>
+    <title>Reviews</title>
   </head>
 
   <body>
@@ -32,7 +32,44 @@
     </section>
 
     <main class="main-section">
+      <section class="hero-section">
+        <h1 class="hero-heading">Reviews</h1>
+        <h2 class="hero-subtitle">Real Stories, Real Sips: What Our Customers Are Saying</h2>
+        <div class="hero-img-container">
+          <img class="hero-img" src="./assets/images/gallery-imgs/gallery-hero-img1.jpg">
+          <img class="hero-img" src="./assets/images/gallery-imgs/gallery-hero-img2.jpg">
+          <img class="hero-img" src="./assets/images/gallery-imgs/gallery-hero-img3.jpg">
+        </div>
+      </section>
 
+      <section class="reviews-section">
+        <div id="reviews-container">
+
+          <!-- <div class="review">
+            <img class="review-pfp" src="./assets/images/reviews-imgs/abt-member-img1.jpg">
+            <h2 class="review-name">Lebron James</h2>
+  
+            <div class="review-parag-container">
+              <img class="quote-left" src="./assets/icons/quote-left.svg">
+              <p class="review-parag">Absolutely love this place! The coffee is always fresh, and the atmosphere is so cozy. The staff is friendly and they always make me feel right at home. Definitely my go-to spot for a morning pick-me-up!</p>
+              <img class="quote-right" src="./assets/icons/quote-right.svg">
+            </div>
+  
+            <div class="star-container">
+              <img src="./assets/icons/star.svg">
+              <img src="./assets/icons/star.svg">
+              <img src="./assets/icons/star.svg">
+              <img src="./assets/icons/star.svg">
+              <img src="./assets/icons/star.svg">
+            </div>
+          </div> -->
+          
+          <!-- More review -->
+        </div>
+
+        <button id="prev-btn" class="left-arrow-btn" onclick="prevSlide()"><</button>
+        <button id="next-btn" class="right-arrow-btn" onclick="nextSlide()">></button> 
+      </section>
 
       
       <section class="footer-section">
@@ -61,6 +98,7 @@
       </section>
     </main>
 
+    <script src="./scripts/reviewSlides.js"></script>
     <script src="./scripts/floating.js"></script>
   </body>
 </html>

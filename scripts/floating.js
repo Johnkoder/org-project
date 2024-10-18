@@ -6,7 +6,7 @@ const images = [
   "./assets/images/coffee-cat.gif"
 ];
 
-let currentIndex = 0;
+let cIndex = 0;
 
 function changeImage() {
   const imageElement = document.getElementById("floating-img");
@@ -14,15 +14,15 @@ function changeImage() {
   imageElement.style.opacity = 0;
   
   setTimeout(() => {
-    if(currentIndex >= images.length) {
-      currentIndex = 0;
-      imageElement.src = images[currentIndex];
+    if(cIndex >= images.length) {
+      cIndex = 0;
+      imageElement.src = images[cIndex];
       imageElement.style.opacity = 100;
-      currentIndex += 1;
+      cIndex += 1;
     } else {
-      imageElement.src = images[currentIndex];
+      imageElement.src = images[cIndex];
       imageElement.style.opacity = 100;
-      currentIndex += 1;
+      cIndex += 1;
     }
   }, 250); 
 }

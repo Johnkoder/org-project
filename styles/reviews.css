@@ -124,6 +124,138 @@ header {
   right: 50px;
 }
 
+/* Hero section styles*/
+.hero-section {
+  background: url(../assets/images/abt-imgs/abt-coffee-bg.jpg);
+  width: 100%;
+  height: 520px;
+  color: var(--cream-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.hero-heading {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+}
+
+.hero-img-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+  top: 150px;
+  border-radius: 20px;
+  border: 8px solid var(--cream-white);
+}
+
+.hero-img:nth-child(1), .hero-img:nth-child(3) {
+  height: 250px;
+  width: 250px;
+}
+
+/* Review Section styles */
+.reviews-section {
+  margin: 0 5em;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.left-arrow-btn, .right-arrow-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  font-size: 2em;
+  color: var(--charcoal-gray);
+  background-color: var(--cream-white);
+  font-weight: bold;
+  padding: 20px 8px;
+  border: 3px solid var(--charcoal-gray);
+  border-radius: 15px;
+  box-shadow: 0 6px 0 0 var(--charcoal-gray);
+  cursor: pointer;
+  transition: 0.06s;
+}
+
+.left-arrow-btn:active, .right-arrow-btn:active {
+  box-shadow: 0 0 0 0 var(--charcoal-gray);  
+  transform: translateY(6px);
+}
+
+.left-arrow-btn:hover, .right-arrow-btn:hover {
+  background-color: var(--mint-green);
+}
+
+.left-arrow-btn {
+  left: 0;
+  top: 50%;
+}
+
+.right-arrow-btn {
+  right: 0;
+  top: 50%;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5em;
+  transition: 0.5s ease-in-out;
+}
+
+.review-pfp {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  color: var(--charcoal-gray);
+  margin-bottom: 15px;
+}
+
+.review-parag-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.review-parag {
+  text-align: center;
+}
+
+.quote-left, .quote-right {
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+}
+
+.quote-left {
+  top: -80px;
+}
+
+.quote-right {
+  right: 0;
+  top: 0;
+}
+
 
 
 /* Footer styles */
