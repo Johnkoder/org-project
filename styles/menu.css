@@ -183,6 +183,70 @@ header {
   color: var(--charcoal-gray)
 }
 
+.cart {
+  position: absolute;
+  z-index: 2;
+  bottom: -200px;
+  left: calc(50% - 22px);
+
+  padding: 8px;
+  border: 2px solid var(--charcoal-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 0 0 var(--charcoal-gray);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.cart:active {
+  box-shadow: 0 0 0 0 var(--charcoal-gray);  
+  transform: translateY(4px);
+}
+
+.cart:hover {
+  background-color: var(--mint-green);
+}
+
+/* Menu section styles */
+.menu-section {
+  padding: 0 5em;
+}
+
+.drinks-heading-container, .pastries-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--coffee-brown);
+}
+
+.dot:nth-child(3), .dot:nth-child(5) {
+  width: 15%;
+}
+
+.dot:nth-child(2), .dot:nth-child(6) {
+  width: 50%;
+}
+
+.drinks-heading {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.hot-heading, .cold-heading {
+  text-decoration: underline;
+}
+
+.pastries-heading {
+  font-size: 2.5em;
+  text-align: center;
+}
 
 
 /* Footer styles */
