@@ -40,13 +40,52 @@
           <div class="hero-img-mid-container">
             <img class="hero-img-mid" src="./assets/images/coffee-cat.gif">
             <span>What would you like?</span>
-            <div class="cart">
+            <div id="cart-btn" class="cart">
               <img src="./assets/icons/cart.svg">
             </div>
           </div>
           <img class="hero-img" src="./assets/images/croissant.jpg">
         </div>
       </section>
+
+      <dialog id="view-cart-modal" class="view-cart-modal">
+        <div class="view-cart-heading-container">
+          <span>Your Cart</span>
+          <button id="view-cart-close-btn" class="view-cart-close-btn">x</button>
+        </div>
+
+        <div class="cart-items-container">
+          <!-- Remove later -->
+           <div class="cart-item">
+              <div class="cart-item-name-container">
+                <span id="cart-item-remove-btn" class="cart-item-remove-btn">x</span>
+                <div class="cart-item-img-container">
+                  <img class="cart-item-img" src="./assets/images/coffee2.jpg">
+                </div>
+                <div class="cart-item-name">Cappuccino</div>
+              </div>
+
+              <div class="price-container">
+                <span>$ </span>
+                <span class="cart-item-price">99.99</span>
+              </div>
+           </div>
+          <!-- JS here -->
+        </div>
+
+        <div class="view-cart-bottom-container">
+          <div class="total-container">
+            <span>TOTAL: $</span>
+            <span class="view-cart-total-price">
+              <!-- Remove later -->
+               99.99
+              <!-- JS here -->
+            </span>
+          </div>
+
+          <button id="view-cart-confirm-btn" class="view-cart-confirm-btn">Confirm</button>
+        </div>
+      </dialog>
 
       <section class="menu-section">
         <div class="drinks-heading-container">

@@ -143,3 +143,29 @@ function render(itemList, itemType) {
 render(hotDrinks, "hot");
 render(coldDrinks, "cold");
 render(pastries, "pastries");
+
+
+
+// Cart script
+
+const cartBtn = document.getElementById('cart-btn');
+const viewCartCloseBtn = document.getElementById('view-cart-close-btn');
+const viewCartModal = document.getElementById('view-cart-modal');
+const viewCartConfirmBtn = document.getElementById('view-cart-confirm-btn');
+const itemsBtn = document.querySelectorAll('.add-to-cart-btn');
+
+const cart = [];
+console.log(itemsBtn)
+
+cartBtn.addEventListener('click', () => {
+  viewCartModal.showModal();
+});
+
+viewCartCloseBtn.addEventListener('click', () => {
+  viewCartModal.close();
+})
+
+viewCartConfirmBtn.addEventListener('click', () => {
+  alert("Your order is complete!");
+  viewCartModal.close();
+})
