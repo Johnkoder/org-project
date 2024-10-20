@@ -40,7 +40,9 @@
           <div class="hero-img-mid-container">
             <img class="hero-img-mid" src="./assets/images/coffee-cat.gif">
             <span>What would you like?</span>
-            <img class="cart" src="./assets/icons/cart.svg">
+            <div class="cart">
+              <img src="./assets/icons/cart.svg">
+            </div>
           </div>
           <img class="hero-img" src="./assets/images/croissant.jpg">
         </div>
@@ -62,10 +64,38 @@
           <div class="hot-section">
             <h2 class="hot-heading">Hot</h2>
             
-            <div class="hot-drinks-container">
+            <div id="hot-drinks-cont" class="items-container">
               <!-- Delete later-->
-              <div class="hot-drink-card">
+              <div class="item-card">
+                <div class="item-img-container">
+                  <img src="./assets/images/croissant.jpg">
+                </div>
 
+                <div class="item-info-container">
+                  <div class="iten-info">
+                    <h2 class="item-name">Cappuccino</h2>
+                    <p class="item-desc">a mix of espresso, steamed milk, and foam, creating a rich and creamy coffee experience.</p>
+                    <div class="item-price">$19.99</div>
+                    </div>
+                    
+                  <button class="add-to-cart-btn">Add to Cart ></button>
+                </div>
+              </div>
+
+              <div class="item-card">
+                <div class="item-img-container">
+                  <img src="./assets/images/croissant.jpg">
+                </div>
+
+                <div class="item-info-container">
+                  <div class="iten-info">
+                    <h2 class="item-name">Cappuccino</h2>
+                    <p class="item-desc">a mix of espresso, steamed milk, and foam, creating a rich and creamy coffee experience.</p>
+                    <div class="item-price">$19.99</div>
+                    </div>
+                    
+                  <button class="add-to-cart-btn">Add to Cart ></button>
+                </div>
               </div>
               <!-- Append js-->
             </div>
@@ -99,7 +129,9 @@
       
       <section class="footer-section">
         <div class="footer-top">
-          <img class="footer-logo" src="assets/icons/logo-cream.svg">
+          <div>
+            <img class="footer-logo" src="assets/icons/logo-cream.svg">
+          </div>
           <div class="footer-links">
             <a href="./index.html">Home</a>
             <a href="./about.html">About Us</a>
