@@ -8,116 +8,117 @@ hotDrinks = [
   },
   {
     id: "h2",
-    img: "/assets/images/menu-imgs/latte.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/latte.jpg",
     name: "Latte",
     desc: "A smooth blend of espresso and steamed milk, topped with a light layer of foam.",
     price: 9.99
   },
   {
     id: "h3",
-    img: "/assets/images/menu-imgs/americano.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/americano.jpg",
     name: "Americano",
     desc: "A strong espresso shot, diluted with hot water for a simple yet rich coffee taste.",
     price: 8.99
   },
   {
     id: "h4",
-    img: "/assets/images/menu-imgs/mocha.png",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/mocha.png",
     name: "Mocha",
     desc: "A fusion of espresso, steamed milk, and chocolate syrup, topped with whipped cream.",
     price: 11.49
   }
-]
+];
 
 coldDrinks = [
   {
     id: "c1",
-    img: "../assets/images/menu-imgs/iced-latte.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/iced-latte.jpg",
     name: "Iced Latte",
     desc: "A chilled blend of espresso and milk, served over ice for a refreshing coffee treat.",
     price: 9.99
   },
   {
     id: "c2",
-    img: "../assets/images/menu-imgs/iced-mocha.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/iced-mocha.jpg",
     name: "Iced Mocha",
     desc: "A cool mix of espresso, milk, and chocolate syrup, finished with whipped cream and ice.",
     price: 11.49
   },
   {
     id: "c3",
-    img: "../assets/images/menu-imgs/iced-americano.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/iced-americano.jpg",
     name: "Iced Americano",
     desc: "A bold espresso shot over ice, diluted with cold water for a smooth, refreshing flavor.",
     price: 8.99
   },
   {
     id: "c4",
-    img: "../assets/images/menu-imgs/cold-brew.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/cold-brew.jpg",
     name: "Cold Brew",
     desc: "Slow-steeped coffee served cold, delivering a rich and smooth flavor with lower acidity.",
     price: 10.49
   },
   {
     id: "c5",
-    img: "../assets/images/menu-imgs/frappe.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/frappe.jpg",
     name: "Coffee Frappe",
     desc: "A blended coffee drink with ice, milk, and a hint of sweetness, topped with whipped cream.",
     price: 12.99
   },
   {
     id: "c6",
-    img: "../assets/images/menu-imgs/iced-tea.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/iced-tea.jpg",
     name: "Iced Tea",
     desc: "Freshly brewed tea served chilled over ice, offering a light and refreshing taste.",
     price: 6.99
   }
-]
+];
 
 pastries = [
   {
     id: "p1",
-    img: "../assets/images/menu-imgs/croissant1.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/croissant1.jpg",
     name: "Croissant",
     desc: "A buttery, flaky pastry that’s perfect for a light snack or breakfast treat.",
     price: 4.99
   },
   {
     id: "p2",
-    img: "../assets/images/menu-imgs/muffin.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/muffin.jpg",
     name: "Blueberry Muffin",
     desc: "A soft, moist muffin packed with sweet, juicy blueberries and a hint of vanilla.",
     price: 3.99
   },
   {
     id: "p3",
-    img: "../assets/images/menu-imgs/cinnamon-rolls.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/cinnamon-rolls.jpg",
     name: "Cinnamon Roll",
     desc: "A warm, gooey roll swirled with cinnamon sugar and topped with cream cheese icing.",
     price: 5.49
   },
   {
     id: "p4",
-    img: "../assets/images/menu-imgs/scone.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/scone.jpg",
     name: "Scone",
     desc: "A classic English scone with a crumbly texture, perfect with jam and cream.",
     price: 3.49
   },
   {
     id: "p5",
-    img: "../assets/images/menu-imgs/chocolate-chip-cookie.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/chocolate-chip-cookie.jpg",
     name: "Chocolate Chip Cookie",
     desc: "A soft, chewy cookie loaded with rich chocolate chips, baked to perfection.",
     price: 2.99
   },
   {
     id: "p6",
-    img: "../assets/images/menu-imgs/apple-pie.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/apple-pie.jpg",
     name: "Apple Pie",
     desc: "A slice of traditional apple pie with a golden crust and sweet, spiced apple filling.",
     price: 5.99
   }
-]
+];
+
 
 
 const hotDrinksContainer = document.getElementById('hot-drinks-cont');
