@@ -1,7 +1,7 @@
 hotDrinks = [
   {
     id: "h1",
-    img: "../assets/images/menu-imgs/cappucino.jpg",
+    img: "https://johnkoder.github.io/org-project/assets/images/menu-imgs/cappucino.jpg",
     name: "Cappuccino",
     desc: "a mix of espresso, steamed milk, and foam, creating a rich and creamy coffee experience.",
     price: 10.99
