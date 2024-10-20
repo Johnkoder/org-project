@@ -384,7 +384,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .cart-item-remove-btn {
@@ -409,9 +409,14 @@ header {
 
 .cart-item-img-container {
   width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--charcoal-gray);
+}
+
+.cart-item-img {
+  object-fit: cover;
 }
 
 .view-cart-bottom-container {
