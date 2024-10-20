@@ -1,28 +1,28 @@
 hotDrinks = [
   {
     id: "h1",
-    img: "../assets/images/menu-imgs/cappucino.jpg",
+    img: "./assets/images/menu-imgs/cappucino.jpg",
     name: "Cappuccino",
     desc: "a mix of espresso, steamed milk, and foam, creating a rich and creamy coffee experience.",
     price: 10.99
   },
   {
     id: "h2",
-    img: "../assets/images/menu-imgs/latte.jpg",
+    img: "./assets/images/menu-imgs/latte.jpg",
     name: "Latte",
     desc: "A smooth blend of espresso and steamed milk, topped with a light layer of foam.",
     price: 9.99
   },
   {
     id: "h3",
-    img: "../assets/images/menu-imgs/americano.jpg",
+    img: "./assets/images/menu-imgs/americano.jpg",
     name: "Americano",
     desc: "A strong espresso shot, diluted with hot water for a simple yet rich coffee taste.",
     price: 8.99
   },
   {
     id: "h4",
-    img: "../assets/images/menu-imgs/mocha.png",
+    img: "./assets/images/menu-imgs/mocha.png",
     name: "Mocha",
     desc: "A fusion of espresso, steamed milk, and chocolate syrup, topped with whipped cream.",
     price: 11.49
