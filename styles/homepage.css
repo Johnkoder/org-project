@@ -718,6 +718,21 @@ button[type="submit"]:active {
   }
 }
 
+/* 375px */
+@media (max-width: 375px) {
+  header {
+    font-size: 0.8em;
+  }
+}
+
+/* 320px */
+@media (max-width: 375px) {
+  header {
+    font-size: 0.7em;
+  }
+}
+
+/* PC */
 /* 732px */
 @media (max-width: 856px) {
   .hero-section {
@@ -751,6 +766,7 @@ button[type="submit"]:active {
   }
 }
 
+/* 660 px */
 @media (max-width: 660px) {
   .hero-section {
     font-size: 0.6em;
@@ -774,3 +790,5 @@ button[type="submit"]:active {
     font-size: 0.6rem;
   }
 }
+
+
