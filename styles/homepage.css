@@ -73,6 +73,7 @@ header {
   font-weight: bold;
   display: flex;
   gap: 2rem;
+  white-space: nowrap;
 }
 
 .nav-btns a {
@@ -158,9 +159,11 @@ header {
 }
 
 
+
+
 .hero-heading {
   color: var(--coffee-brown);
-  font-size: 4em;
+  font-size: 4rem;
   margin-bottom: 15px;
 }
 
@@ -236,8 +239,8 @@ header {
 }
 
 .about-img-section img {
-  height: 320px;
-  width: 320px;
+  max-height: 20em;
+  min-width: 20em;
 }
 
 .about-img-section img:nth-child(2), .about-img-section img:nth-child(1) {
@@ -261,6 +264,7 @@ header {
   justify-content: center;
   align-items: flex-end;
   gap: 8px;
+  white-space: nowrap;
 }
 
 .abt-heading img {
@@ -342,7 +346,7 @@ header {
 }
 
 .offer-card {
-  padding: 50px 15px;
+  padding: 4em 15px;
   border: 5px solid var(--coffee-brown);
   border-radius: 30px;
   text-align: center;
@@ -613,4 +617,160 @@ button[type="submit"]:active {
   background-color: var(--cream-white);
   width: 100%;
   margin-bottom: 3em;
+}
+
+
+/*Media QUeries*/
+/* Mobile - 425px */
+@media (max-width: 425px){
+  /* Header */
+  header {
+    font-size: 0.9em;
+    gap: 2em;
+  }
+
+  .nav-btns {
+    gap: 1em;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  /*Hero section*/
+  .hero-section {
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-img1 {
+    height: 8em;
+  }
+
+  .hero-img2, .hero-img3 {
+    display: none;
+  }
+
+  .hero-heading, .hero-subtitle {
+    text-align: center;
+  }
+
+  /* about section */
+  .about-section {
+    padding: 2em;
+  }
+
+  .about-img-section {
+    display: none;
+  }
+
+  .abt-parag {
+    text-align: center;
+  }
+
+  /*What we Offer*/
+  .whatweoffer-section {
+    padding: 2em;
+  }
+
+  .offer-card-container {
+    flex-direction: column;
+  }
+
+  /*FAQ*/
+  .faq-section {
+    padding: 2em;
+  }
+
+  .faq-heading {
+    white-space: wrap;
+    text-align: center;
+  }
+
+  /*Contact Us section*/
+  .contact-section {
+    padding: 2em 2em;
+  }
+
+  .contact-container {
+    display:block;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .socials-container {
+    font-size: 0.8em;
+  }
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
+}
+
+/* 732px */
+@media (max-width: 856px) {
+  .hero-section {
+    font-size: 0.8em;
+  }
+
+  .about-section {
+    font-size: 0.9em;
+  }
+
+  .whatweoffer-section {
+    font-size: 0.9em;
+  }
+
+  .offer-card-container {
+    flex-direction: column;
+  }
+
+  .socials-container {
+    font-size: 0.8em;
+  }
+
+  .contact-section {
+    padding: 2em 2em;
+  }
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-section {
+    font-size: 0.6em;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  .about-img-section {
+    font-size: 0.9em;
+  }
+
+  .socials-container {
+    font-size: 0.7em;
+  }
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
 }
