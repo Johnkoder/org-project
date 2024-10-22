@@ -533,6 +533,19 @@ header {
     overflow: hidden;
   }
 
+  /* View cart modal */
+  .view-cart-modal {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 0.7em;
+  }
+
+  .cart-item-img-container {
+    width: 60px;
+    height: 60px;
+  }
+
+
   /*Footer section*/
   .footer-section {
     padding: 2em;
