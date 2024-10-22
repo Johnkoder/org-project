@@ -725,13 +725,6 @@ button[type="submit"]:active {
   }
 }
 
-/* 320px */
-@media (max-width: 401px) {
-  header {
-    font-size: 0.7em;
-  }
-}
-
 /* PC */
 /* 732px */
 @media (max-width: 856px) {

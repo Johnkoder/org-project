@@ -314,19 +314,11 @@ header {
 }
 
 /* 375px */
-@media (max-width: 375px) {
-  header {
-    font-size: 0.8em;
-  }
-}
-
-/* 320px */
 @media (max-width: 401px) {
   header {
     font-size: 0.7em;
   }
 }
-
 
 /* PC */
 /* 732px */
