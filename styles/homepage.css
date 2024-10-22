@@ -768,12 +768,13 @@ button[type="submit"]:active {
 
 /* 660 px */
 @media (max-width: 660px) {
-  .hero-section {
-    font-size: 0.6em;
-  }
-
+  /* Header section*/
   .logo-name {
     display: none;
+  }
+
+  .hero-section {
+    font-size: 0.6em;
   }
 
   .about-img-section {

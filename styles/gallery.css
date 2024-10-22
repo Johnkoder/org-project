@@ -26,7 +26,7 @@ html {
 
 body {
   background-color: var(--cream-white);
-  padding-top: 80px;
+  padding-top: 65px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -72,6 +72,7 @@ header {
   font-weight: bold;
   display: flex;
   gap: 2rem;
+  white-space: nowrap;
 }
 
 .nav-btns a {
@@ -144,6 +145,7 @@ header {
 .hero-heading {
   font-size: 5em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .hero-subtitle {
@@ -284,4 +286,65 @@ header {
   background-color: var(--cream-white);
   width: 100%;
   margin-bottom: 3em;
+}
+
+/* Media Queries */
+/* Mobile */
+/* 425px */
+@media (max-width: 425px) {
+  /* Header */
+  header {
+    font-size: 0.9em;
+    gap: 2em;
+  }
+
+  .nav-btns {
+    gap: 1em;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+  header {
+    font-size: 0.8em;
+  }
+}
+
+/* 320px */
+@media (max-width: 375px) {
+  header {
+    font-size: 0.7em;
+  }
+}
+
+
+/* PC */
+/* 732px */
+@media (max-width: 856px) {
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
+}
+
+/* 660 px */
+@media (max-width: 660px) {
+
+  /*Footer section*/
+  .footer-section {
+    padding: 2em;
+    font-size: 0.6rem;
+  }
 }
