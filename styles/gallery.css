@@ -133,13 +133,13 @@ header {
 .hero-section {
   background: url(../assets/images/abt-imgs/abt-coffee-bg.jpg);
   width: 100%;
-  height: 520px;
+  height: 100vh;
   color: var(--cream-white);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 130px;
+  margin-bottom: 8em;
 }
 
 .hero-heading {
@@ -150,6 +150,7 @@ header {
 
 .hero-subtitle {
   font-weight: 500;
+  text-align: center;
 }
 
 .hero-img-container {
@@ -239,7 +240,7 @@ header {
 }
 
 .gallery-img {
-  height: 25em;
+  max-height: 25em;
   object-fit: cover;
   border: 5px solid var(--charcoal-gray);
   box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
@@ -306,6 +307,19 @@ header {
     display: none;
   }
 
+  .hero-img:nth-child(4) {
+    display: none;
+  }
+
+  .hero-section {
+    font-size: 0.7em;
+  }
+
+  .gallery-section {
+    padding: 0 1em;
+    font-size: 0.5em;
+  }
+
   /*Footer section*/
   .footer-section {
     padding: 2em;
@@ -320,14 +334,40 @@ header {
   }
 }
 
+
+
 /* PC */
-/* 732px */
+/* 856px */
 @media (max-width: 856px) {
 
   /*Footer section*/
   .footer-section {
     padding: 2em;
     font-size: 0.6rem;
+  }
+}
+
+/* 972px */
+@media (max-width: 972px) {
+  /* Hero section */
+  .hero-img:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 725px) {
+  /* Hero section */
+  .hero-img:nth-child(3) {
+    display: none;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  .gallery-section {
+    padding: 0 2em;
+    font-size: 0.6em;
   }
 }
 
