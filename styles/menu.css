@@ -519,7 +519,7 @@ header {
 }
 
 /* 375px */
-@media (max-width: 375px) {
+@media (max-width: 401px) {
   header {
     font-size: 0.8em;
   }
