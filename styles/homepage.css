@@ -718,10 +718,10 @@ button[type="submit"]:active {
   }
 }
 
-/* 375px */
-@media (max-width: 375px) {
+/* 401px */
+@media (max-width: 401px) {
   header {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 
