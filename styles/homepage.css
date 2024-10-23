@@ -42,7 +42,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4em;
+  gap: 3em;
   background-color: var(--caramel-beige);
   position: fixed; 
   z-index: 100;
@@ -102,8 +102,7 @@ header {
 
 /* Hero section styles*/
 .hero-section {
-  padding-top: 5em;
-  padding: 0 5em;
+  padding: 0 5em 0 5em;
   margin-bottom: 8.5em;
   display: flex;
   align-items: center;
@@ -164,7 +163,7 @@ header {
 }
 
 .hero-info-section {
-  width: 45vw;
+  max-width: 45vw;
 }
 
 .hero-heading {
@@ -355,9 +354,11 @@ header {
   justify-content: center;
   gap: 3em;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .offer-card {
+  min-width: 15em;
   padding: 4em 1em;
   border: 5px solid var(--coffee-brown);
   border-radius: 1.8em;
@@ -404,11 +405,13 @@ header {
   align-items: center;
   gap: 1.2em;
   margin-bottom: 3.7em;
+  white-space: nowrap;
 }
 
 .faq-heading {
   font-size: 2.5rem;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  text-align: center;
 }
 
 .faq-line {
@@ -600,6 +603,8 @@ button[type="submit"]:active {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5.6em;
+  gap: 1em;
+  white-space: nowrap;
 }
 
 .footer-links {
@@ -632,12 +637,24 @@ button[type="submit"]:active {
 
 
 /*Media QUeries*/
+
+/* PC */
+/* 708px */
+@media (max-width: 708px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
 /* Mobile - 425px */
-@media (max-width: 425px){
-  /* Header */
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+
   header {
-    font-size: 0.9em;
-    gap: 2em;
+    gap: 1em;
   }
 
   .nav-btns {
@@ -648,150 +665,45 @@ button[type="submit"]:active {
     display: none;
   }
 
-  /*Hero section*/
+  /* Hero section */
+  .hero-img-section {
+    width: 50vw;
+  }
+
   .hero-section {
-    padding: 0 2em;
-    display: flex;
     flex-direction: column-reverse;
+    padding: 0 3em 0 3em;
+    justify-content: center;
   }
 
   .hero-info-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-img1 {
-    height: 8em;
-  }
-
-  .hero-img2, .hero-img3 {
-    display: none;
-  }
-
-  .hero-heading, .hero-subtitle {
+    max-width: 100%;
     text-align: center;
   }
 
-  /* about section */
-  .about-section {
-    padding: 2em;
-  }
-
+  /* About section */
   .about-img-section {
     display: none;
   }
 
-  .abt-parag {
-    text-align: center;
-  }
-
-  /*What we Offer*/
-  .whatweoffer-section {
-    padding: 2em;
-  }
-
-  .offer-card-container {
-    flex-direction: column;
-  }
-
-  /*FAQ*/
-  .faq-section {
-    padding: 2em;
-  }
-
+  /*faq section*/
   .faq-heading {
     white-space: wrap;
-    text-align: center;
   }
 
-  /*Contact Us section*/
+  /* Contact section */
   .contact-section {
-    padding: 2em 2em;
+    padding: 2em
   }
 
   .contact-container {
-    display:block;
-    font-size: 0.7rem;
-    display: flex;
     flex-direction: column-reverse;
     gap: 2em;
   }
 
-  .socials-container {
-    font-size: 0.8em;
-  }
-
-  /*Footer section*/
+  /* Footer section */
   .footer-section {
-    padding: 2em;
-    font-size: 0.6rem;
-  }
-}
-
-/* 401px */
-@media (max-width: 401px) {
-  header {
-    font-size: 0.7em;
-  }
-}
-
-/* PC */
-/* 732px */
-@media (max-width: 856px) {
-  .hero-section {
-    font-size: 0.8em;
-  }
-
-  .about-section {
-    font-size: 0.9em;
-  }
-
-  .whatweoffer-section {
-    font-size: 0.9em;
-  }
-
-  .offer-card-container {
-    flex-direction: column;
-  }
-
-  .socials-container {
-    font-size: 0.8em;
-  }
-
-  .contact-section {
-    padding: 2em 2em;
-  }
-
-  /*Footer section*/
-  .footer-section {
-    padding: 2em;
-    font-size: 0.6rem;
-  }
-}
-
-/* 660 px */
-@media (max-width: 660px) {
-  /* Header section*/
-  .logo-name {
-    display: none;
-  }
-
-  .hero-section {
-    font-size: 0.6em;
-  }
-
-  .about-img-section {
-    font-size: 0.9em;
-  }
-
-  .socials-container {
-    font-size: 0.7em;
-  }
-
-  /*Footer section*/
-  .footer-section {
-    padding: 2em;
+    padding: 5em 2em;
     font-size: 0.6rem;
   }
 }
