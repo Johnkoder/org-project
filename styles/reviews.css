@@ -26,7 +26,7 @@ html {
 
 body {
   background-color: var(--cream-white);
-  padding-top: 65px;
+  padding-top: 4em;
 }
 
 a, a:hover, a:focus, a:active {
@@ -38,40 +38,41 @@ a, a:hover, a:focus, a:active {
 header {
   border-bottom: 3px solid var(--coffee-brown);
   width: 100%;
-  padding: 20px 0 20px 0;
-  margin-bottom: 40px;
+  padding: 1.2em 0 1.2em 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3em;
   background-color: var(--caramel-beige);
   position: fixed; 
-  top: 0;
   z-index: 100;
+  top: 0;
 }
 
 .logo-section {
   display: flex;
-  gap: 10px;
+  gap: 0.8em;
   align-items: center;
 }
 
 .logo-name {
   color: var(--coffee-brown);
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
 }
 
 .logo-img {
   height: 2.2em;
+  width: 2.2em;
+  max-width: 100%;
 }
 
 .nav-btns {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
   display: flex;
-  gap: 2rem;
+  gap: 2em;
   white-space: nowrap;
 }
 
@@ -135,13 +136,12 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 8em;
+  margin-bottom: 6em;
 }
 
 .hero-heading {
-  font-size: 5em;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0.3em;
 }
 
 .hero-subtitle {
@@ -155,27 +155,37 @@ header {
   gap: 1em;
 }
 
-.hero-img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
+.hero-img-container div {
+  width: 12.5em;
+  height: 12.5em;
+  
   position: relative;
   top: 150px;
   border-radius: 20px;
-  border: 8px solid var(--cream-white);
+  border: 0.6em solid var(--cream-white);
+  overflow: hidden;
 }
 
-.hero-img:nth-child(1), .hero-img:nth-child(3) {
-  height: 250px;
-  width: 250px;
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+.hero-img-container div:nth-child(1), 
+.hero-img-container div:nth-child(3) {
+  height: 15.5em;
+  width: 15.5em;
+} 
 
 /* Review Section styles */
 .reviews-section {
   margin: 0 5em;
-  margin-bottom: 80px;
+  margin-bottom: 5em;
   display: flex;
   justify-content: center;
+  position: relative;
+  min-height: 50vh;
   position: relative;
 }
 
@@ -187,17 +197,17 @@ header {
   color: var(--charcoal-gray);
   background-color: var(--cream-white);
   font-weight: bold;
-  padding: 20px 8px;
+  padding: 1.1em 0.5em;
   border: 3px solid var(--charcoal-gray);
   border-radius: 15px;
-  box-shadow: 0 6px 0 0 var(--charcoal-gray);
+  box-shadow: 0 0.2em 0 0 var(--charcoal-gray);
   cursor: pointer;
   transition: 0.06s;
 }
 
 .left-arrow-btn:active, .right-arrow-btn:active {
   box-shadow: 0 0 0 0 var(--charcoal-gray);  
-  transform: translateY(6px);
+  transform: translateY(0.2em);
 }
 
 .left-arrow-btn:hover, .right-arrow-btn:hover {
@@ -218,26 +228,28 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  left: 0;
   margin: 0 5em;
   transition: 0.5s ease-in-out;
 }
 
 .review-pfp {
-  height: 120px;
-  width: 120px;
+  height: 7.5em;
+  width: 7.5em;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 0.8em;
 }
 
 .review-name {
   color: var(--charcoal-gray);
-  margin-bottom: 15px;
+  margin-bottom: 0.7em;
 }
 
 .review-parag-container {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0.7em;
 }
 
 .review-parag {
@@ -245,7 +257,7 @@ header {
 }
 
 .quote-left, .quote-right {
-  height: 100px;
+  height: 6.25em;
   position: absolute;
   z-index: -1;
 }
@@ -261,7 +273,7 @@ header {
 
 
 
-/* Footer styles */
+/* Footer styles */ 
 .footer-section {
   background-color: #4E4E4E;
   color: var(--cream-white);
@@ -271,7 +283,9 @@ header {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 5.6em;
+  gap: 1em;
+  white-space: nowrap;
 }
 
 .footer-links {
@@ -303,13 +317,24 @@ header {
 }
 
 /* Media Queries */
-/* Mobile */
-/* 425px */
+/* Media Queries */
+/* PC */
+/* 708px */
+@media (max-width: 708px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+/* Mobile - 425px */
 @media (max-width: 425px) {
-  /* Header */
+  html {
+    font-size: 12px;
+  }
+
   header {
-    font-size: 0.9em;
-    gap: 2em;
+    gap: 1em;
   }
 
   .nav-btns {
@@ -320,62 +345,19 @@ header {
     display: none;
   }
 
-  /* Hero section*/
-  .hero-section {
-    font-size: 0.7em;
-  }
-
-  .hero-img:nth-child(1) {
+  /* Hero section */
+  .hero-img-container div:nth-child(2), .hero-img-container div:nth-child(1) {
     display: none;
   }
 
+  /* Reviews section */
   .reviews-section {
-    margin: 3em 2em;
-    font-size: 0.8em;
+    margin: 5em 2em;
   }
-
-  /*Footer section*/
+  
+  /* Footer section */
   .footer-section {
-    padding: 2em;
-    font-size: 0.6rem;
-  }
-}
-
-/* 375px */
-@media (max-width: 401px) {
-  header {
-    font-size: 0.7em;
-  }
-}
-
-
-/* PC */
-/* 732px */
-@media (max-width: 856px) {
-
-  /*Footer section*/
-  .footer-section {
-    padding: 2em;
-    font-size: 0.6rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo-name {
-    display: none;
-  }
-
-  .hero-img:nth-child(2) {
-    display: none;
-  }
-}
-
-/* 660 px */
-@media (max-width: 660px) {
-
-  /*Footer section*/
-  .footer-section {
-    padding: 2em;
+    padding: 5em 2em;
     font-size: 0.6rem;
   }
 }
