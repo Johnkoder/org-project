@@ -198,10 +198,6 @@ header {
 }
 
 .cart {
-  position: absolute;
-  z-index: 2;
-  bottom: 12em;
-
   padding: 0.5em;
   border: 2px solid var(--charcoal-gray);
   border-radius: 10px;
@@ -212,6 +208,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--cream-white);
+  max-width: 3em;
 }
 
 .cart:active {
@@ -576,5 +573,15 @@ header {
   .footer-section {
     padding: 5em 2em;
     font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-img {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
   }
 }
