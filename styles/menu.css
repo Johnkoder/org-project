@@ -545,6 +545,11 @@ header {
     font-size: 0.7rem;
   }
 
+  .hero-img-container div:nth-child(1), 
+  .hero-img-container div:nth-child(3) {
+    display: none;
+  }
+
   /* Menu section */
   .item-name {
     font-size: 1.3rem;
