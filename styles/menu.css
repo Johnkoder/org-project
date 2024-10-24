@@ -355,7 +355,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 34.4em;  
+  min-height: 95vh;  
   z-index: 5;
 }
 
