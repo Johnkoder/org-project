@@ -233,7 +233,49 @@ header {
   margin-bottom: 5em;
   gap: 4em;
   background-color: var(--caramel-beige);
-  color: var(--cream-white)
+  color: var(--cream-white);
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1729817195 {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1729817195 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-bottom-1729817195 .shape-fill {
+  fill: #DAB894;
+}
+
+.custom-shape-divider-top-1729817631 {
+  position: absolute;
+  bottom: -10.8em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1729817631 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 10.8em;
+}
+
+.custom-shape-divider-top-1729817631 .shape-fill {
+  fill: #DAB894;
 }
 
 .about-img-section {
