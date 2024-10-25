@@ -179,6 +179,13 @@ header {
 } 
 
 /* Gallery section styles */
+#loading-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--coffee-brown);
+  margin: 2em 0; 
+}
+
 .gallery-section {
   padding: 0 5em;
   margin-bottom: 6.25em;
