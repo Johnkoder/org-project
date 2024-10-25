@@ -42,7 +42,7 @@ function displayReview(index) {
   
   setTimeout(() => {
     reviewsContainer.innerHTML = `
-    <div class="review">
+    <div class="review appear">
       <img class="review-pfp" src="${review.img}">
       <h2 class="review-name">${review.name}</h2>
 
