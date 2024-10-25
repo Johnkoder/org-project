@@ -762,6 +762,18 @@ button[type="submit"]:active {
   animation-range: entry 0 cover 40%;
 }
 
+.from-up {
+  animation: from-up linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.from-down {
+  animation: from-down linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
 .from-right-1 {
   animation: from-right ease;
   animation-timeline: view();
@@ -794,6 +806,28 @@ button[type="submit"]:active {
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+@keyframes from-up {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes from-down {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
