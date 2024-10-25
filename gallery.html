@@ -33,9 +33,9 @@
 
     <main class="main-section">
       <section class="hero-section">
-        <h1 class="hero-heading">Gallery</h1>
-        <h2 class="hero-subtitle">Moments Captured in Every Sip: A Visual Journey Through Our Coffee Culture</h2>
-        <div class="hero-img-container">
+        <h1 class="hero-heading hero-appear">Gallery</h1>
+        <h2 class="hero-subtitle hero-appear">Moments Captured in Every Sip: A Visual Journey Through Our Coffee Culture</h2>
+        <div class="hero-img-container hero-from-right-1">
           <div><img class="hero-img" src="./assets/images/abt-imgs/abt-hero-img1.jpg"></div>
           <div><img class="hero-img" src="./assets/images/abt-imgs/abt-hero-img2.jpg"></div>
           <div><img class="hero-img" src="./assets/images/abt-imgs/abt-hero-img3.jpg"></div>
@@ -44,7 +44,7 @@
       </section>
 
       <section class="gallery-section">
-        <div class="gallery-heading-container">
+        <div class="gallery-heading-container appear">
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
@@ -98,7 +98,7 @@
           let HTML = ``;
           data.forEach(element => {
             HTML +=`
-              <div class="gallery-img-container">
+              <div class="gallery-img-container from-left-1">
                 <span class="img-overlay">
                   <p class="img-title">${element.title}</p>
                 </span>

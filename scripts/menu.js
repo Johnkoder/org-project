@@ -130,7 +130,7 @@ function render(itemList, itemType) {
 
   itemList.forEach(item => {
     HTML += `
-      <div class="item-card">
+      <div class="item-card from-left-1">
         <div class="item-img-container">
           <img src="${item.img}">
         </div>
