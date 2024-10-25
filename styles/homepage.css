@@ -169,6 +169,7 @@ header {
   color: var(--coffee-brown);
   font-size: 4rem;
   margin-bottom: 0.1em;
+  
 }
 
 .hero-subtitle {
@@ -233,7 +234,49 @@ header {
   margin-bottom: 5em;
   gap: 4em;
   background-color: var(--caramel-beige);
-  color: var(--cream-white)
+  color: var(--cream-white);
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1729817195 {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1729817195 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-bottom-1729817195 .shape-fill {
+  fill: #DAB894;
+}
+
+.custom-shape-divider-top-1729817631 {
+  position: absolute;
+  bottom: -10.8em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1729817631 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 10.8em;
+}
+
+.custom-shape-divider-top-1729817631 .shape-fill {
+  fill: #DAB894;
 }
 
 .about-img-section {
@@ -250,7 +293,11 @@ header {
 .about-img-section div img {
   width: 100%;
   height: 100%;
-  
+  transition: transform 0.8s;
+}
+
+.about-img-section div img:hover {
+  transform: scale(1.2);
 }
 
 .about-img-section div:nth-child(2), .about-img-section div:nth-child(1) {
@@ -706,5 +753,153 @@ button[type="submit"]:active {
     font-size: 0.6rem;
   }
 }
+
+/* Animation utility classes */
+.appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.from-right-1 {
+  animation: from-right ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.from-right-2 {
+  animation: from-right ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.from-left-1 {
+  animation: from-left ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.from-left-2 {
+  animation: from-left ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes from-right {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Header (no scroll) */
+@keyframes expand {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.expand {
+  animation: expand 0.8s cubic-bezier(.46,1.16,.6,.97);
+}
+
+/* Hero section animation (no scroll) */
+.hero-from-right-1 {
+  animation: hero-from-right-1 0.8s ease;
+}
+.hero-from-right-2 {
+  animation: hero-from-right-2 1.1s ease;
+}
+.hero-from-right-3 {
+  animation: hero-from-right-3 1.5s cubic-bezier(.7,.02,.64,.94);
+}
+.hero-from-left {
+  animation: hero-from-left 0.8s ease;
+}
+
+@keyframes hero-from-left {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-from-right-1 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-from-right-2 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }30% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-from-right-3 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 
