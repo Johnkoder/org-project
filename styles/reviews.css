@@ -182,7 +182,7 @@ header {
 /* Review Section styles */
 .reviews-section {
   margin: 0 5em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
   display: flex;
   justify-content: center;
   position: relative;
@@ -272,6 +272,59 @@ header {
   top: 0;
 }
 
+.give-us-section {
+  background-color: var(--caramel-beige);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  gap: 4em;
+  position: relative;
+}
+
+.give-us-side-heading h1 {
+  font-size: 3.5rem;
+}
+
+.give-us-side-heading p {
+  font-size: 1.3rem;
+  color: var(--charcoal-gray)
+}
+
+.qr-container {
+  max-width: 20em;
+  max-height: 20em;
+  overflow: hidden;
+  border: 0.4em solid var(--charcoal-gray);
+  border-radius: 1em;
+}
+
+.qr-container img {
+  max-height: 100%;
+  max-width: 100%
+}
+
+.custom-shape-divider-bottom-1729938956 {
+  position: absolute;
+  top: -8.5em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1729938956 svg {
+  position: relative;
+  display: block;
+  width: calc(107% + 1.3px);
+  height: 137px;
+}
+
+.custom-shape-divider-bottom-1729938956 .shape-fill {
+  fill: #DAB894;
+}
 
 
 /* Footer styles */ 
@@ -325,7 +378,24 @@ header {
   html {
     font-size: 12px;
   }
+
+  .custom-shape-divider-bottom-1729938956 {
+    top: -11.3em;
+  }
+
+  .give-us-section {
+    gap: 2em;
+  }
+
+  .give-us-section h1 {
+    font-size: 2rem;
+  }
+
+  .give-us-section h1 {
+    font-size: 2rem;
+  }
 }
+
 
 
 /* Mobile - 425px */
@@ -353,7 +423,15 @@ header {
 
   /* Reviews section */
   .reviews-section {
-    margin: 5em 2em;
+    margin: 5em 1em;
+  }
+
+  .review {
+    margin: 0 3em;
+  }
+
+  .left-arrow-btn, .right-arrow-btn {
+    font-size: 1em;
   }
   
   /* Footer section */
